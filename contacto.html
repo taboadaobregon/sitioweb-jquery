@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Estilos css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--Validacion jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
+
+
+    <!--JQuery Ui-->
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <!--Nuestro script-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <!--InicioSection global-->
+    <section id="global">
+        <!--header-->
+        <header>
+
+            <div id="logo">
+                <h1>Curriculum</h1>
+            </div>
+
+            <!--limpiar flotado-->
+            <div class="clearfix"></div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <!---fin de  header-->
+
+        <!--inicio del slider
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="Funky roots"></div>
+                <div><img src="img/rojo.jpg" title="The long and winding road"></div>
+                <div><img src="img/cielo.jpg" title="Happy trees"></div>
+            </div>
+        </div>
+        fin del slider-->
+
+        <!--inicio del contenido-->
+        <section id="contenido">
+
+            <div id="box">
+                <!--Cargar contacto-->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="form-contacto">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" name="nombre" data-validation=" alphanumeric">
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" data-validation="alphanumeric">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" data-validation="email" data-validation-error-msg="Ponga por favor un email valido">
+
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date">Fecha Nacimiento:</label>
+                    <input type="date" name="date" data-validation="date" data-validation-format="mm-dd-yy">
+                    
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" data-validation="number">
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+                
+            </div>
+
+
+                <aside id="sidebar">
+                    <div class="about">
+                        <h4><span>Quien soy</span></h4>
+                        <img src="img/caracol.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ipsa!</p>
+                    </div>
+
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="for-name">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email">
+
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass">
+
+                            <input type="submit" name="butto" value="Entrar">
+                        </form>
+                    </div>
+                </aside>
+
+                <!--limpiar flotado-->
+                <div id="clearfix"></div>
+
+        </section>
+
+        <!--fin del contenido-->
+    </section>
+
+    <!--fin de la Section global-->
+
+    <footer>
+        Pagina creada por Robert Taboada &COPY;
+
+        <a href="#" class="subir">Subir</a>
+    </footer>
+
+</body>
+
+
+</html>

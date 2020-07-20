@@ -1,0 +1,294 @@
+/*Estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+
+/*limpiar flotados*/
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*1:damos imagen de fondo y Ponemos fijo el fondo de pantalla
+se llevo los estilos a green.css
+body{
+    background: url(../img/hojas.jpg);
+    background-attachment: fixed; /*es para que el fondo se quede fijo
+}*/
+
+/*2:damos estilos al contenido*/
+#global{
+    width: 65%;
+    margin:0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: opx opx 2px gray;
+    overflow: hidden;
+}
+ 
+/*3:Damos estilos al logo*/
+/*se llevo los estilos a green.css*/
+#logo{
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 80px;
+    background: #235e3d;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    float: left;
+    margin-bottom: 20px;  
+    text-transform: uppercase;
+}   
+
+/*4:damos a nusestra barra de navegacion*/
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  
+}
+
+#menu ul{
+    
+    line-height: 46px;
+    list-style: none;
+    
+}
+
+#menu ul li{
+    height: 46px;
+    /*le pone sus li en forma orizontal es casi parecido al float:left */
+    display: inline-block;
+    transition: all 300ms;
+    
+}
+
+/*se llevo los estilos a green css*/
+#menu ul li:hover{
+    background: #235e3d;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*5: damos estilos a nuestro articulos*/
+#post{
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.post{
+    padding: 7px;
+}
+.post h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 10px;
+}
+
+.post p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background: #235e3d;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    /*margin-left: auto;*/
+    /*float: right;*/
+    margin-bottom: 20px;
+}
+
+/*damos estilos a nuestra barra lateral*/
+#sidebar {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 31%;
+    float: left;
+    margin-left: 55px;
+}
+
+#sidebar h4{
+    margin-bottom: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url(../img/lines.png) repeat-x;
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 90%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+#login h4{
+    margin-top: 50px;
+
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+select{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray;
+
+}
+
+form input[type="submit"]{
+    background: #ccc;
+    padding: 10px;
+    border: 1px solid gray;
+    color: #333;
+    cursor: pointer;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51,51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+
+
+}
+
+.bx-wrapper , .bx-viewport{
+    height: 250px !important;
+}
+
+#selector-theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51,51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue{
+    width: 30px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#to-green{
+    background: #235e3d;
+
+}
+
+#to-red{
+    background: #C43413;
+}
+
+#to-blue{
+    background: #1F87C4;
+}
+
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+
+}
+
+#box{
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+
+
+.ui-accordion-header{
+    background: grey;
+}
+
+
+#reloj{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    border: 5px dashed #333; 
+    width: 30%;
+    padding: 30px;
+    margin: 0px auto;
+}
+
+#form-contacto{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-contacto label{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-error{
+    /*float: right;*/
+    font-size: 11px;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
